@@ -1,0 +1,187 @@
+/* basic setup */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+.row-m{
+    display: flex;
+    
+    padding: 0 3em;
+}
+
+.row-item{
+    margin-left: 1em;
+}
+
+
+/* reuseable setup */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section{
+    padding: 80px 0;
+}
+
+
+/* header setup */
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./IMG/chiicken\ soup\ sauce.webp");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.nav li a:link,
+.nav li a:visited{
+    padding:8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition:boder-buttons0.2s;
+}
+.nav li a:hover,
+.nav li a:active{
+    border-bottom: 2px solid orange;
+}
+.text{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* headings */
+
+h1,h2,h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    
+}
+h1{
+margin-top: 0;
+margin-bottom: 20px;
+color: #fff;
+font-size: 240%;
+word-spacing: 4px;
+letter-spacing: 1px;
+}
+h2{
+font-size: 180%;
+word-spacing: 2px;
+text-align: center;
+margin-bottom: 30px;
+letter-spacing: 1px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+h2::after{
+    display:block;
+    height: 2px;
+    background-color: orange;
+    content: " ";
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/* paragraphs */
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 3%;
+}
+p{
+    padding: 1px;
+    font-size:90% ;
+    line-height:145% ;
+}
+/* buttons setup */
+.btn:link,.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: 0.2s;
+    background-color: 0.2s;
+    border: 0.2s;
+    color: 0.2s;
+}
+
+.btn-full:link,.btn-full:visited{
+    background-color: orange;
+    border: 1px solid orange;
+    color: #fff;
+}
+.btn-ghost:link,.btn-ghost:visited{
+    border: 1px solid orange;
+    color: orange;
+}
+.btn:hover,.btn:active{
+background-color: rgb(174, 79, 1);
+}  
+span{
+    display: flex;
+}
+
+/* meal */
+
+.meal{
+    padding: 0;
+}
+.show-case{
+    list-style: none;
+    width: 100%;
+}
+.show-case li{
+    display:block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+    opacity: 0.5s;
+}  
+.meal-photo img:hover{
+transform: scale(1.03);
+opacity: 1;
+}
